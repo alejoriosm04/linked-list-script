@@ -1,3 +1,6 @@
+# DONT CHANGE THIS CODE, UNLESS YOU NEED TO DO SPECIFIC MODIFICATIONS TO THE FUNCTIONS
+
+
 # Python code to insert a node in a
 # given Singly Linked List (recursively)
  
@@ -76,6 +79,5 @@ def printll(head):
 # Driver code
 if __name__=='__main__':
      pass
-     # Here you can add your code to test all the functions
  
 # This code was implemented and adapted by Alejandro Rios

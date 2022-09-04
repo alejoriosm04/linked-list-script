@@ -17,7 +17,7 @@ def rotar(head: Node, k):
 
 
 def main():
-    ## TEST #3
+    ## TEST NO. 3
     head = None
     head = insertAtEnd(head, 1)
     head = insertAtEnd(head, 2)

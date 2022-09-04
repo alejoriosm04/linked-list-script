@@ -13,7 +13,7 @@ def borrar(head: Node, pos):
 
 
 def main():
-    ## TEST #2
+    ## TEST NO. 2
     head = None
     head = insertAtEnd(head, 1)
     head = insertAtEnd(head, 2)

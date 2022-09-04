@@ -1,63 +1,51 @@
 <h1 align = "center">Linked List Script ⛓️</h1>
-<h2>
-    About project
-</h2> 
 
-<p>
-    This script was created for my Data Structure and Algorithms 1 class, to be able to see how our code works when we modify Linked Lists in Python and understand their behavior.
-</p>
+Script that tests the behavior of linked lists in Python.
 
-<h2>
-    How does it work?
-</h2> 
+Created for the course _Data Structures and Algorithms I_ at [EAFIT University](https://github.com/eafit/).
 
-<p>
-    This Python script will allow you to see your Linked List in the console. Also, create a new Linked List form zero and receive the output of your modifications. Importing the file that is stored in your work folder on your main file, you will be able to create a link between the functions and Classes that <code>linkedLists.py</code> has on it with your main file.
-</p>
-<h2>
-  How to use it?
-</h2>
-<p>
-    Clone the file <code>linkedLists.py</code> on your work folder, in the same folder where you are working with your main file.
-</p>
-<p>
-    Do not modify the code in linkedLists.py file. All the tests and the behavior of the program will be in the created file by you.
-</p>
-<p>
-    1. Create your file, on your main file, import all the information (Classes and Functions) that <code>linkedLists.py</code> has with:
+
+## What it does
+
+- Links the functions and classes of `linkedLists.py` with your main file
+- Prints your linked list in the console
+- Create a linked list from scratch and see the output from your modifications
+
+
+## Examples
+
+In `/examples` path you will find some implementations.
+
+There is also a `template.py` to adapt your main file.
+
+## Step-by-step guide
+
+Clone the script `linkedLists.py` on your work folder (where your main file is).
+
+**Do ***not*** modify** the script. All the tests will actually be within your main file.
+
+1. Import the classes and functions of `linkedLists.py` _on your main file_:
     
 ```python
 from linkedLists import *
 ```
-</p>
-<p>
-    2. Write the function that you are trying to create after import. The following function is a simple example.
+
+2. Code the function you want to test _on your main file_:
 
 ```python
-from linkedLists import *
-
-
-# EXAMPLE
 def insertarAlInicio(head: Node, valor: int) -> Node:
     nuevoNodo = Node(valor)
     nuevoNodo.next = head
     return head
 ```
-</p>
-<p>
-    3. In the main function, create the tests that you need to check. With the function <code>insertAtEnd(head, val)</code> you will be able to create the Nodes of your original linkedList. Remember to assign the values to the head of the Linked List. The linked list should start with <code>None</code>. This function is from <code>linkedLists.py</code> file, and as it is name says, is for create Nodes at the end of the Linked List.
+
+3. In the `main()` function, create the tests to check for.
+
+The `insertAtEnd(head, val)` function (from the script) creates the Nodes of your original linked list
+
+Remember to assign the values to the head of the linked list. Also, it must begin with `head = None`.
 
 ```python
-from linkedLists import *
-
-
-def insertarAlInicio(head: Node, valor: int) -> Node:
-    nuevoNodo = Node(valor)
-    nuevoNodo.next = head
-    return head
-
-
-# EXAMPLE
 def main():
     head = None
     head = insertAtEnd(head, 1)
@@ -68,28 +56,21 @@ def main():
     # 5->4->99->2->1->None
 
     head = insertarAlInicio(head, 1)
-    printll(head)
-
-
-if __name__ == '__main__':
-    main()
 ```
-</p>
-<p>
-     When you are going to use your function, assign the head again, depending on the behavior of the function that you created. If the function return a Node or a head, you have to assign this function to the head again. If the function return a value like a number or another thing different from a Node, you have to put the function inside a print to see the result. This will depend on your necessities.
-</p>
-<p>
-    4. Finally to see your final linked List, use the function <code>printll(head)</code>. And you will see your Linked List on your console.
-</p>
-<p>
-    In the repository files, you will find some examples of implementation, also a template that you can modify with the help of the comments there.
-</p>
-<h2>
-    Contribute
-</h2>
-<p>
-    If you want to contribute to this project, do not doubt on doing a <code>Pull Request</code> for this project. I will take a look at it.
-</p>
-<p>
-    If you have any questions or complaints please let me know.
-</p>
+
+<!---
+I still find this paragraph very confusing...
+-->
+When you are going to use your function, assign the head again, depending on the behavior of the function that you created. If the function return a Node or a head, you have to assign this function to the head again. If the function return a value like a number or another thing different from a Node, you have to put the function inside a print to see the result. This will depend on your necessities.
+
+4. Run the `printll(head)` function to print your modified linked list.
+
+```python
+printll(head)
+# PENDING: OUTPUT AFTER
+```
+
+
+## Contribute
+
+Pull requests are welcome. I will take a look at them.
